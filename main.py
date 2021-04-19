@@ -208,10 +208,6 @@ print()
 
 # soma das coordenadas to ascii
 
-# helper function
-def to_utf8(number):
-    return chr(int(number))
-
 # output = ''
 # for number in sum_x_y:
 #     output += to_utf8(number)
@@ -235,14 +231,6 @@ def to_utf8(number):
 
 # print(output)
 
-
-syngenta = 'syngenta'
-
-sum_syng = 0
-for character in syngenta:
-    sum_syng += ord(character)
-
-print(sum_syng)
 
 
 # Codificando o arquivo inteiro para base64 e tentando uma chave

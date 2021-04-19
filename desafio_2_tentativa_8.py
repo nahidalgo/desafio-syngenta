@@ -19,7 +19,6 @@ for i in range(len(pixels)):
         x = i % width
         y = i // width
 
-        # converter a coordenada y em texto
         try:
             output += chr(x-y)
         except:

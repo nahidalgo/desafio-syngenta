@@ -13,6 +13,7 @@ Dada a [imagem](Syngenta.bmp), iniciamos o desafio pela contagem dos pixels.
 ## Dependências
 
  - [Pillow](https://pypi.org/project/Pillow/)
+ - [pycrypto](https://pypi.org/project/pycrypto/)
 
 ## Contagem dos pixels verdes
 A solução para o primeiro problema se encontra no arquivo [desafio_1.py](desafio_1.py). A maneira mais simples de resolver é utilizando compreensão de lista em apenas uma linha de código, utilizando da programação funcional disponível em Python, como no exemplo abaixo.
