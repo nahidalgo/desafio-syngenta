@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Desafio Syngenta Tentativas\
+\
+#1 - Brilho e contraste X\
+#2 - Encontrar pixels com valores diferentes X\
+#3 - Steganography (todos os pixels n\'e3o verde n\'e3o possuem informa\'e7\'e3o a mais) X\
+\
+Comecei a ent\'e3o analisar a imagem visualmente e percebi algumas coisas que chamaram a aten\'e7\'e3o. Por exemplo, o alinhamento vertical de alguns pixels em algumas se\'e7\'f5es da imagem. A partir disso comecei a trabalhar com hip\'f3teses.\
+\
+#4 - A coordenada do pixel na imagem convertida para apenas 1D pode ser convertida em ASCII X\
+\
+Ao printar as coordenadas dos pixels, pude notar que cada linha da imagem possui apenas um pixel verde\
+Comecei a pensar em coisas a respeito.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 #5 - A coordenada X do pixel em 2D pode ser traduzida para ASCII X\
+#6 - A coordenada Y do pixel pode ser traduzida para ASCII X\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 #7 - A soma das coordenadas pode ser traduzida para ASCII X\
+#8 - A subtra\'e7\'e3o das coordenadas pode ser traduzida para ASCII X\
+#9 - Criei uma tabela de frequ\'eancia para ver quais coordenadas de x apareciam mais vezes e talvez correlacionar isso com alguma coisa, por exemplo uma cifra de C\'e9sar ou algum tipo de substitui\'e7\'e3o de numero por letras, mas as hip\'f3teses neste quesito s\'e3o muitas\
+\
+Uma coisa que pode ser relevante \'e9 que o pixel 91 fica na coordenada 92,92. Talvez signifique algo.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Come\'e7o a pensar que talvez seja uma criptografia com chave, onde a chave possa ser as palavras contidas na imagem ou talvez nos sites da Syngenta?\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Esse foi o primeiro dia de trabalho.\
+\
+Agora, no segundo dia, come\'e7o a pensar em novas hip\'f3teses e revisitar as antigas.\
+\
+Coisas a se pensar:\
+	- Como descriptografar usando uma chave\
+\
+Um fato interessante \'e9 que a string \'91Syngenta Digital Hire me\'92 possui 24 caracteres, poderia ela ser usada como uma chave de 192bits para descriptografar uma string?\
+\
+Reunindo o que tenho at\'e9 agora:\
+	- 298 pixels verdes\
+	- Cada linha da imagem possui apenas um pixel verde (exceto a linha 15 e a linha 0, que n\'e3o possui nada)\
+	- Cada coluna pode conter mais de um pixel verde\
+	- A imagem tem 420/300 pixels na propor\'e7\'e3o de 42/30 = 21/15 = 7/5\
+	- A imagem possui 126000 pixels no total\
+	- Soma de todas as coordenadas X de pixels verde = 61984 = 0xf220 = 0b1111.0010.0010.0000\
+\
+Por que na linha 0 e na 15 n\'e3o temos nenhum pixel verde?\
+Por que o pixel verde 91 se encontra na coordenada (92, 92)?\
+\
+Agora que sabemos que a linha 15 n\'e3o possui pixel verde, conseguimos ver quais colunas n\'e3o possuem pixels e talvez fazer algo a respeito?\
+\
+O qu\'e3o fundo o time de recrutamento da Syngenta Digital quer que eu chegue? Ser\'e1 que estou pensando demais numa coisa que \'e9 simples?\
+\
+Esses posts de blog chamam a aten\'e7\'e3o:\
+\
+https://pordentrodoagro.com.br/inteligencia-artificial-na-agricultura/\
+https://www.syngenta.com.br/press-release/produtos-tecnologias/nova-funcionalidade-da-syngenta-digital-usa-inteligencia\
+\
+Vou tentar tra\'e7ar uma linha que liga todos os pixels verdes\
+\
+}
