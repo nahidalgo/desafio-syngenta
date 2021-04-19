@@ -42,8 +42,6 @@ def sort_func(coord):
 
 x_y_coordinates.sort(key=sort_func)
 
-print(x_y_coordinates)
-
 # Desenhando na imagem e salvando em outro arquivo comecando da esquerda para direita
 with Image.open("Syngenta.bmp") as im:
 
