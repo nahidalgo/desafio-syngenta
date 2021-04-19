@@ -20,6 +20,6 @@ A solução para o primeiro problema se encontra no arquivo [desafio_1.py](desaf
 ![Código para a primeira solução](https://i.imgur.com/XXAdALM.png)
 
 ## Mensagem secreta
-O desafio de encontrar a mensagem secreta persiste. Minha linha de pensamento se encontra no arquivo [segundo_desafio.md](segundo_desafio.md).
+O desafio de encontrar a mensagem secreta persiste. Minha linha de pensamento se encontra no arquivo [segundo_desafio.txt](segundo_desafio.txt).
 
 Em resumo, tentei utilizar esteganografia, criptografia, manipulação de bits e análise de coordenadas.
