@@ -12,7 +12,6 @@ pixels = image.getdata()
 
 # lista que guarda todas as coordenadas x,y dos pixels verdes
 x_y_coordinates = []
-green_pixels_count = 0
 for i in range(len(pixels)):
     if is_pixel_green(pixels[i], 100):
         x = i % width
@@ -32,7 +31,6 @@ with Image.open("Syngenta.bmp") as im:
         draw = ImageDraw.Draw(im)
         draw.line([x0, y0, x1, y1], fill=128)
 
-        # write to stdout
         im.save('ligando_pixels_verdes.png', "PNG")
 
 
