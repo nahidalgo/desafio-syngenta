@@ -42,8 +42,6 @@ Por que o pixel verde 91 se encontra na coordenada (92, 92)?
 
 Agora que sabemos que a linha 15 não possui pixel verde, conseguimos ver quais colunas não possuem pixels e talvez fazer algo a respeito?
 
-O quão fundo o time de recrutamento da Syngenta Digital quer que eu chegue? Será que estou pensando demais numa coisa que é simples?
-
 Esses posts de blog chamam a atenção:
 
 https://pordentrodoagro.com.br/inteligencia-artificial-na-agricultura/
